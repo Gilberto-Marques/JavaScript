@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ex01.css">
+    <a href="index.html" id="menu">MENU PRINCIPAL</a>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Cliente</h1>
+    </header>
+
+    <main>
+        Nome: <input type="text" name="nome" id="nome" placeholder="Nome">
+        <br>
+        <br>
+        Data Nasc: <input type="date" name="data" id="data" placeholder="Data  Nascimento">
+        <br>
+        <br>
+        Sexo: <input type="text" name="sexo" id="sexo" placeholder="M / F">
+        <br>
+        <br>
+        <input type="button" value="Cadastrar" onclick="cadastrar()">
+        <input type="button" value="Cancelar" name="menu" id="menu" onlick="menu">
+        <br>
+        <br>
+        <div id="cadastro"></div>
+    </main>
+
+    <footer>
+        <p></p>
+        <strong>Criado por Gilberto - 19/10/2022</strong>
+        <div type="text" id="hora"></div>
+    </footer>
+
+    <script>
+        var hora = new Date().getHours()
+        var minuto = new Date().getMinutes()
+        window.document.querySelector('div#hora').innerHTML = `Hora: ${hora}:${minuto}`
+
+        function cadastrar() {
+            var nome = window.document.querySelector('input#nome').value
+            var data = window.document.querySelector('input#data').value
+            var sexo = window.document.querySelector('input#sexo').value
+            sexo = sexo.toUpperCase()
+            var cadastro = window.document.querySelector('div#cadastro')
+            if((nome) && nome !='' && data != '' && sexo == 'M' || sexo =='F'){
+                cadastro.innerHTML = `Nome: ${nome} <br>Nascimento: ${data} <br>Sexo: ${sexo}`  
+            }else{
+                window.alert('[ERRO] Valor inválido!')
+            }
+        }  
+        
+        
+    </script>
+
+</body>
+
+</html>

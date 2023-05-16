@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos DOM</title>
+    <style>
+        body{
+            background: rgb(156, 79, 79);
+            color: rgb(130, 157, 157);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id ="msg">DIV POR ID</div>
+    <div name = "nome">DIV POR NAME</div>
+    <div class = "classe">DIV POR CLASS</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]//pegando o elemento do 1° <p>
+        
+        p1.style.color = 'blue'
+        window.document.write('</br>Escrito por TagName: '+p1.innerHTML)
+        //innerText : puxa apenas o texto
+        //innerHTML : puxa o texto com as TAGs aplicadas
+        //var p2 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.getElementById('msg')
+        window.document.write('</br>Escrito por ById: ' +d.innerHTML)
+        //d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        //window.document.getElementById('msg').innerText = 'Olá!'
+
+        var n = window.document.getElementsByName('nome')[0]
+        n.style.color='red'
+        window.document.write('</br>Escrito por ByName: '+n.innerHTML)
+        //n.innerText = 'Olá'
+        //alterar entre name e id por exemplo, precisa alterar a div 
+        
+        var c = window.document.getElementsByClassName('classe')[0]
+        c.style.color='purple'
+        window.document.write('</br>Escrito por ByClassName: '+c.innerText)
+
+        var f = window.document.querySelector('div#msg')
+        window.document.write('</br>Escrito com querySelector por ID: '+f.innerHTML)
+
+        var g = window.document.querySelector('div.classe')
+        window.document.write('</br>Escrito com querySelector por CLASSE: '+g.innerHTML)
+        //div#msg = quando é id
+        //div.msg = quando é class
+        d.style.background = 'blue'
+
+        var j = 'JoRgE'
+        window.document.write('<br>'+j)
+        window.document.write('<br>'+j.toLocaleLowerCase())
+        window.document.write('<br>'+j.toLocaleUpperCase())
+
+    </script>
+</body>
+</html>

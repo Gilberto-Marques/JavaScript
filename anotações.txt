@@ -1,0 +1,104 @@
+LIVROS:
+- JavaScript - Guia definitivo (O'Reilly).
+- JavaScript - Guia do programador.
+-Guia de referência - MOZILLA
+https://developer.mozilla.org/pt-BR/
+
+-Guia de referência - ECMA.
+https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+--------------------------------------------------------------------------------
+
+
+Operadores:
+aritméticos, atribuição, relacionais, lógicos e ternário
+
+aritmético: +, -, *, /, %, **(potência).
+atribuição: +=, -=, *=, /=, **=, %=.
+
+pós incremento: n++ (recebe depois)
+pré incremento: ++n (recebe antes)
+
+pós decremento: n-- ('')
+pré decremento: --n ('')
+
+relacionais: >, <, ==, !=, >=, <=
+ex: 5 == '5' - true(ele nãoo testa o tipo)
+    5 === '5'-false(ele testa o tipo)	
+
+lógicos: !, &&, ||
+negação: !true, !false
+conjunção: &&(dois precisam ser verdadeiro para ser verdadeiro)
+disjunção: ||(um dos dois precisam ser verdadeiro para ser verdadeiro)
+
+precedência de operadores:
+1°operadores aritméticos
+2° operadores relacionais
+3° operadores lógicos
+
+precedência operadores lógicos:
+1° !
+2° &&
+3° ||
+
+ternário: teste?true:false
+          res = 5>4? 'SIM':'NÃO' 
+          res == 'SIM'
+
+          res =  5<4?'SIM':NÃO
+          res == 'NÃO'
+
+------------------------
+
+DOM: Document Object Model
+Árvore DOM:
+windows: location, document, history,...
+
+(parent)document: (child)html
+
+(parent)html: (child)head, body
+
+(parent)head: (childs)meta, title
+
+(parent)body: (childs)h1, p, div,...
+
+quando é chamado por id usa-se #
+quando é chamado por class usa-se .
+
+utilizando byTagName:
+var p1 = window.document.getElementsByTagName('p')[0]//pegando o elemento do 1° <p>
+
+utilizando byId:
+var d = window.document.getElementById('msg')
+
+utilizando ByName:
+var d = window.document.getElementsByName('msg')[0]
+
+utilizando ByClassName:
+var d = window.document.getElementsByClassName
+
+utilizando querySelector:
+var d = window.document.querySelector('div#msg')(quando for do tipo id)
+''         ''    ''          ''      ('div.msg')(quando for do tipo class)
+
+OBS: SEMPRE ALTERAR A DIV
+
+--------------------------------------------------------------------------
+EVENTOS DOM:
+
+dentro da div, será detectado vários eventos(area criada):
+
+mouseenter: quando o mouse entrar na area criada;
+mousemove: enquanto o mouse estiver se movendo dentro da area;
+mousedown: enquanto o botão do mouse estiver clicado;
+mouseup: quando o botão do mouse for solto depois do click;
+click: quando o botão do mouse for clicado na área;
+mouseout: quando o mouse sair da area div criada.
+
+depuração de erros:
+clicar com botão direito do mouse na tela do BROWSER, INPECIONAR(INSPECT), DEV TOOLS, na aba CONSOLE ele direciona a linha com erro
+
+--------------------------------------------------------
+variáveis:
+simples: guarda 1 valor
+composta(array): guarda vários valores
+
