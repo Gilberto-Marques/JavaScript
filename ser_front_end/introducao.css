@@ -1,0 +1,37 @@
+body{
+    background-color: blueviolet;
+}
+
+h1{
+    color: red;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 54px;
+}
+
+h2{
+    font-size: 48px;
+    font-style: italic;
+}
+
+h3{
+    font-size: 38px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+    background-color: darkcyan;
+       
+}
+
+p{
+    text-indent: 28px;
+    font-size: 28px;
+    text-align: justify;
+    font-variant: small-caps;
+    /*comentário CSS*/
+}
+
+a{
+    text-decoration: none;
+    font-variant: normal;
+}
+
