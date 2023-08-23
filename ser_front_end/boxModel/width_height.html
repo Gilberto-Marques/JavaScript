@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        p {
+            background-color: #ccc;
+            
+            padding: 20px 36px 20px 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            background-color: rgb(202, 133, 171);
+            padding: 15px;/*preenchimento da borda ao conteúdo, dos quatro lados*/
+
+        }
+
+        h2 {
+            background-color: blueviolet;
+            margin-top: 60px;
+        }
+        /*ATRIBUINDO valores, sempre sentido horario, começando no top*/
+        /*se atribuir apenas 2 valores, duplicara ao lado paralelo do que falta e mesmo serve se faltar apenas 1 valor */
+        .destaque{
+            background-color: chartreuse;
+
+        }
+
+        .size{
+            width: 50%;
+            height: 100px;
+        }
+        /*COLOCANDO DOIS ATRIBUTOS NO MESMO ELEMENTOS CLASS*/
+
+        .padding{
+            padding: 26px;
+        }
+
+        .margin{
+            margin: 50px 0px 20px 50px;
+        }
+
+        .border{
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+
+    <h2>Width e Height</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est quaerat vel deserunt consequatur quod,
+        numquam deleniti impedit adipisci enim aliquid at natus laudantium perferendis accusantium dolorum ea hic
+        voluptatum!</p>
+    <p class="destaque size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+
+    <h2>Padding</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est quaerat vel deserunt consequatur quod,
+        numquam deleniti impedit adipisci enim aliquid at natus laudantium perferendis accusantium dolorum ea hic
+        voluptatum!</p>
+        <p class="destaque padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+    <h2>Margin</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est quaerat vel deserunt consequatur quod,
+        numquam deleniti impedit adipisci enim aliquid at natus laudantium perferendis accusantium dolorum ea hic
+        voluptatum!</p>
+        <p class="destaque margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+
+    <h2>Border</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est quaerat vel deserunt consequatur quod,
+        numquam deleniti impedit adipisci enim aliquid at natus laudantium perferendis accusantium dolorum ea hic
+        voluptatum!</p>
+        <p class="destaque border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo.</p>
+</body>
+
+</html>
