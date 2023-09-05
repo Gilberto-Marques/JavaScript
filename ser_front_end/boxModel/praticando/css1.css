@@ -1,0 +1,23 @@
+h1{
+    margin: 50px 10px 10px 100px;
+    text-align: center;
+}
+
+.p1{
+    background-color: blue;
+
+}
+
+.p2
+{
+    background-color: blueviolet;
+}
+
+.p3{
+    background-color: brown;
+}
+
+.img{
+    background-color: rgb(165, 162, 162);
+
+}
