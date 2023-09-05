@@ -5,6 +5,8 @@ h1{
 
 .p1{
     background-color: blue;
+    height: 100px;
+    width: 50%;
 
 }
 
@@ -20,4 +22,10 @@ h1{
 .img{
     background-color: rgb(165, 162, 162);
 
+}
+
+.p1_filho{
+    background-color: rgb(43, 189, 226);
+    height: 100%;
+    width: 100%;
 }
